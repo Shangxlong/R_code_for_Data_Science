@@ -30,7 +30,7 @@ ggplot(TrainingSet, aes(x=Sepal.Width, y=Sepal.Length)) +
 ggplot(TestingSet, aes(x=Sepal.Width, y=Sepal.Length)) + 
  geom_point(aes(color = Species))
 
-#############################################
+############################################
 # SVM model (polynomial kernel)
 Model <- train(Species ~ ., data = TrainingSet,
                method = 'svmPoly',
